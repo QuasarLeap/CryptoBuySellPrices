@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bitcoin/Ethereum Buy/Sell Prices</title>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <script async src="./main.js"></script>
+        <script defer src="./tabs.js"></script>
+
+    </head>
+    <body>
+
+        <h1>Bitcoin/Ethereum Buy/Sell Prices</h1>
+        
+        <ul class="tabs">
+            <li data-tab-target="#bitcoin" class="active tab">
+                <img src="/res/bitcoin-btc-logo.png" class="currencyImg" alt="Bitcoin">
+            </li>
+            <li data-tab-target="#ethereum" class="tab">
+                <img src="/res/ethereum-eth-logo.png" class="currencyImg" alt="Ethereum">
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="bitcoin" data-tab-content class="active">
+                <h2>Bitcoin</h2>
+                <p>Bitcoin Prices</p>
+
+                <!--<ul class="tabs tabs-tx">
+                    <li data-tab-target="#buyBTC" class="active tab">Buy</li>
+                    <li data-tab-target="#sellBTC" class="tab">Sell</li>
+                </ul>-->
+
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <img src="/res/binance-coin-bnb-logo.png" class="marketImg" alt="Binance">
+                            </th>
+                            <th>
+                                <img src="/res/gemini-dollar-gusd-logo.png" class="marketImg" alt="gemini-dollar-gusd-logo">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Buy</th>
+                            <td>
+                                <div id="BTC_bin_ask" class="priceLabel"></div>
+                            </td>
+                            <td>
+                                <div id="BTC_gem_ask" class="priceLabel"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Sell</th>
+                            <td>
+                                <div id="BTC_bin_bid" class="priceLabel"></div>
+                            </td>
+                            <td>
+                                <div id="BTC_gem_bid" class="priceLabel"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <label class="recommend">Recommended to buy at: </label>
+                    <div id="recBTCBuy" class="recommend site"></div>
+                    <label class="recommend">Recommended to sell at: </label>
+                    <div id="recBTCSell" class="recommend site"></div>
+                
+            </div>
+
+
+
+
+            <div id="ethereum" data-tab-content>
+                <h2>Ethereum</h2>
+                <p>Ethereum Prices</p>
+
+                <!--<ul class="tabs tabs-tx">
+                    <li data-tab-target="#buy" class="active tab">Buy</li>
+                    <li data-tab-target="#sell" class="tab">Sell</li>
+                </ul>-->
+
+                <table id="priceChart" class="priceTable">
+                    <tr>
+                        <th></th>
+                        <th>
+                            <img src="/res/binance-coin-bnb-logo.png" class="marketImg" alt="Binance">
+                        </th>
+                        <th>
+                            <img src="/res/gemini-dollar-gusd-logo.png" class="marketImg" alt="gemini-dollar-gusd-logo">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Buy</th>
+                        <td>
+                            <div id="ETH_bin_ask" class="priceLabel"></div>
+                        </td>
+                        <td>
+                            <div id="ETH_gem_ask" class="priceLabel"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sell</th>
+                        <td>
+                            <div id="ETH_bin_bid" class="priceLabel"></div>
+                        </td>
+                        <td>
+                            <div id="ETH_gem_bid" class="priceLabel"></div>
+                        </td>
+                    </tr>
+                </table>
+
+                <label class="recommend">Recommended to buy at: </label>
+                <div id="recETHBuy" class="recommend site">Recommended to buy at: </div>
+                <label class="recommend">Recommended to sell at: </label>
+                <div id="recETHSell" class="recommend site">Recommended to sell at: </div>
+
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

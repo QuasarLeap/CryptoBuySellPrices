@@ -1,0 +1,87 @@
+[data-tab-content]{
+    display: none;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    
+}
+
+table{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+th{
+    padding: 50px;
+}
+td{
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid green;
+    border-radius: 50px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.tabs-tx{
+    border-bottom: 0;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 25px;
+}
+
+.tab:hover{
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+.tab.active{
+    background-color: lightgreen;
+    border-radius: 25px;
+}
+
+.tab-content{
+    text-align: center;
+    font-family: 'Spectral', serif;
+}
+
+.recommend{
+    font-size: 28px;
+}
+
+.site{
+    color: chocolate;
+}
+
+.currencyImg{
+    height: auto;
+    max-width: 50px;
+}
+
+.marketImg{
+    height: auto;
+    max-width: 50px;
+}
