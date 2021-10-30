@@ -1,8 +1,8 @@
 
 
 var BTC_binance_ask, BTC_binance_bid, BTC_gemini_ask, BTC_gemini_bid, ETH_binance_ask, ETH_binance_bid, ETH_gemini_ask, ETH_gemini_bid
-var binanceURL='https://api.binance.us/api/v3/ticker/bookTicker?symbol='
-var geminiURL='https://api.gemini.com/v1/pubticker/'
+var binanceURL='http://localhost:8080/Binance?symbol='
+var geminiURL='http://localhost:8080/Gemini?symbol='
 
 
 function updateRecommended(){
